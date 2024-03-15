@@ -1,35 +1,91 @@
-<!DOCTYPE HTML>
-<!--
-    Strata by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html> 
-    <head>
-        <title>Ben Heinrichs Art Portfolio</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="Tab Icon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="Tab Icon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="Tab Icon/favicon-16x16.png">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    </head>
-    <body class="is-preload">
-        <header id="header">
-            <div class="inner">
-                <a href="#" class="image avatar"><img src="images/fulls/pfp_woods.png" alt="" /></a>
-                <h1><strong>Ben Heinrichs Art Portfolio</strong></h1>
-                <p>Benjamin.br.heinrichs@gmail.com  | +1 (604) 328-8690</p>
-            </div>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Heinrichs Art Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Tab Icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Tab Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Tab Icon/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        <!-- Main Content here, if you have any -->
-<div class="header">
-    <h1>Statement:</h1>
-    <p>Thought I'd do a project to improve on my GitHub skills! It's crude, but please enjoy the very horizontal gallery. I've included the PDF in the repo, titled Portfolio_BH, that contains more information about the mediums used for each piece.</p>
-</div>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-<div class="gallery">
-    <!-- Add your artwork images here -->
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            transition: transform 0.3s ease-in;
+        }
+
+        @media (max-width: 700px) {
+            header h1, header nav {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="container">
+        <div class="inner">
+            <a href="#" class="image avatar"><img src="images/fulls/pfp_woods.png" alt="" /></a>
+            <h1><strong>Ben Heinrichs Art Portfolio</strong></h1>
+            <p>Benjamin.br.heinrichs@gmail.com | +1 (604) 328-8690</p>
+        </div>
+    </header>
+
+    <div class="container header">
+        <h1>Statement:</h1>
+        <p>Thought I'd do a project to improve on my GitHub skills! It's crude, but please enjoy the very horizontal gallery. I've included the PDF in the repo, titled Portfolio_BH, that contains more information about the mediums used for each piece.</p>
+    </div>
+
+    <div class="container gallery">
+           <!-- Add your artwork images here -->
     <img src="Dawn_treader.jpg" width="650" 
      height="500"alt="The Dawn Treader">
     <img src="SpiderVerse (1).jpg" width="391" 
@@ -56,7 +112,6 @@
      height="500"alt="Waterbottle Study, Digital">
     <img src="Glasses.jpg"width="667" 
      height="500" alt="Glasses Study, Digital">
-    <!-- Repeat the line above for each piece of artwork you want to include -->
-</div>
-    </body>
+    </div>
+</body>
 </html>
